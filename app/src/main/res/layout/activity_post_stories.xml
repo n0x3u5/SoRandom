@@ -1,0 +1,56 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.n0x3u5.SoRandom.PostStories">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_sub"
+            android:text="Subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_sub"
+            android:layout_below="@id/tv_sub"
+            android:layout_marginTop="5dp"
+            android:hint="Give your story a subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_story"
+            android:layout_below="@id/et_sub"
+            android:layout_marginTop="10dp"
+            android:text="Your Story"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_story"
+            android:layout_below="@id/tv_story"
+            android:layout_marginTop="5dp"
+            android:lines="5"
+            android:inputType="textMultiLine"
+            android:hint="Your story goes here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bt_post"
+            android:layout_below="@id/et_story"
+            android:layout_marginTop="5dp"
+            android:text="Post Story"
+            android:onClick="postStory"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+    </RelativeLayout>
+
+</ScrollView>
